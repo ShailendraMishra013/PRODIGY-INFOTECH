@@ -1,0 +1,109 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#4b0082,#6a5acd,#00bfff);
+}
+
+.container{
+    width:420px;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+    text-align:center;
+}
+
+h1{
+    color:#4b0082;
+    margin-bottom:20px;
+}
+
+#display{
+    font-size:45px;
+    font-weight:bold;
+    margin:25px 0;
+    color:#333;
+}
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+button{
+    padding:12px 22px;
+    border:none;
+    border-radius:8px;
+    color:white;
+    cursor:pointer;
+    font-size:16px;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+#start{
+    background:#28a745;
+}
+
+#pause{
+    background:#ffc107;
+    color:black;
+}
+
+#reset{
+    background:#dc3545;
+}
+
+#lap{
+    background:#007bff;
+}
+
+h2{
+    margin-top:25px;
+    color:#4b0082;
+}
+
+#laps{
+    margin-top:15px;
+    max-height:200px;
+    overflow-y:auto;
+    list-style:none;
+    text-align:left;
+}
+
+#laps li{
+    padding:10px;
+    margin:8px 0;
+    background:#f4f4f4;
+    border-left:5px solid #4b0082;
+    border-radius:5px;
+}
+
+@media(max-width:500px){
+
+.container{
+    width:90%;
+}
+
+#display{
+    font-size:35px;
+}
+
+button{
+    width:45%;
+}
+}
